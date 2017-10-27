@@ -95,6 +95,7 @@ console.log(n.includes(' '));
 // Repeats a string value by a set amount of times
 console.log(firstname.repeat(5));
 
+
 ##Arrow Functions
 // Example #1
 const years = [1992, 1942, 2001, 1998, 2017]
@@ -216,6 +217,7 @@ const[age, retirement]=calcAgeRetire(1991)
 console.log(age);
 console.log(retirement);
 
+
 ##Arrays
 // Example #1
 const boxes = document.querySelector(selector)
@@ -263,6 +265,7 @@ console.log(ages[fullAge.indexOf(true)]); // Displays the value of the first tru
 console.log(ages.findIndex(cur => cur >= 34));  // Displays the first instance where it's true
 console.log(ages.find(cur => cur >= 34)); // Displays the value of the first true value
 
+
 ##Spread Operators - takes an array and splits them into single values
 // Example #1
 function addAges(a,b,c,d){
@@ -295,6 +298,7 @@ const boxes = document.querySelector('.box')
 const all = [...h, ...boxes]
 Array.from(all).forEach(cur => cur.style.color = 'orange')
 
+
 ##Rest and Default Parameters - receives single values and transforms them into an array with multiple parameters
 ##rest
 // ES5
@@ -313,6 +317,7 @@ function fullAge6(...years){
   years.forEach(cur => console.log((2017-cur)>=18))
 }
 fullAge6(1991, 2006, 2017, 1992, 1923)
+
 
 #default
 function family1(firstname, DOB, lastname, nationality){
@@ -339,6 +344,7 @@ function family2(firstname, DOB, lastname = 'Pearman', nationality = 'Canadian')
 
 var mackenzie = new family2('Mackenzie', 2000)
 var peanut = new family2('Peanut', 2013, 'Emery', 'Bermudian')
+
 
 ##Maps - great for creating hash maps and allows iteration as opposed to obj in the past
 const question = new Map()
@@ -387,6 +393,7 @@ const ans = parseInt(prompt('Write the correct answer?'))
 // Compares the user input and validates if it is correct
 console.log(question.get(ans === question.get('correct')))
 
+
 ##Classes and Subclasses - nothing inherently new but adds syntactical sugar for new ES6 code
 ##Classes
 // ES5
@@ -425,6 +432,7 @@ class person6 {
 const bill = new person6('bill', 1956, 'roadman')
 bill.calcAge()
 person6.greeting()
+
 
 ##Subclasses
 // ES5
@@ -490,6 +498,7 @@ const johnathlete6 = new athlete6('john', 1991, 'runner', 3, 9)
 
 johnathlete6.calcAge()
 johnathlete6.wonMedal
+
 
 ##Best uses of ES6
 For browsers that aren't ready for ES6, the code must be converted to ES5. The most common transpiler on the market is Babel.
